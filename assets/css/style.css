@@ -97,7 +97,7 @@ p {
 .nav__profile {
   height: 8em;
   width: 8em;
-  background-image: url("/assets/images/perfil_cv_DL.jpg");
+  background-image: url("../images/perfil_cv_DL.jpg");
   background-size: cover;
   border-radius: 50%;
   margin: auto;
