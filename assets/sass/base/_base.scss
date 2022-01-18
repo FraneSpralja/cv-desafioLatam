@@ -1,0 +1,28 @@
+body {
+    background-color: $white;
+    color: $black;
+}
+
+.container__flex {
+    display: flex;
+    @include breakpoint('ms'){
+        display: block;
+    }
+}
+
+.container {
+    width: 80%;
+    @include breakpoint('ms'){
+        margin: 0 auto;
+    }
+}
+
+.container__block {
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    line-height: 1.6;
+    color: $gray-blue;
+    font-weight: $font-light;
+    border-top: 1px solid $gray-blue;
+}

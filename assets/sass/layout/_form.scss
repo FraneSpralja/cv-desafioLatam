@@ -1,0 +1,30 @@
+.form {
+    width: 80%;
+    @include breakpoint ('ms'){
+        width: 90%;
+    }
+}
+
+.form__block {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    row-gap: 7px;
+    margin-bottom: 7px;
+}
+
+.label__form {
+    font-size: $medium;
+}
+
+.input__form {
+    height: 2em;
+    padding: 0 1em;
+}
+
+.text-area {
+    padding: 1em;
+    font-size: 1em;
+    font-family: lato;
+    color: $gray-blue;
+}

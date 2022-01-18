@@ -1,0 +1,65 @@
+.main {
+    width: 90%;
+    padding: 1em;
+}
+
+.about__profile {
+    margin-bottom: 3em;
+}
+
+.profile__text {
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+.social__link i {
+    color: $black;
+    font-size: $xx-large;
+    transition-property: color;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .2s;
+    margin-right: .5em;
+    &:hover {
+        color: $green;
+    }
+}
+
+.container__title {
+    margin-bottom: 2em;
+    font-weight: $font-black;
+}
+
+.jobs__experience--body {
+    margin-bottom: 2em;
+}
+
+.block__subtitle {
+    font-weight: $font-bold;
+    font-size: $small;
+    margin-top: 0;
+    padding: 0;
+}
+
+.container__block__title {
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 1em;
+}
+
+.block__title {
+    width: 70%;
+}
+
+.block__date {
+    width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.block__date span {
+    text-align: right;
+}
+
+.skill__block {
+    display: block;
+}

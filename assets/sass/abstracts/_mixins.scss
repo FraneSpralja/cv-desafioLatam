@@ -1,0 +1,13 @@
+//BREAKPOINT 
+
+@mixin breakpoint($point){
+    @if $point == ms {
+        @media (max-width: 768px){@content;}
+    }
+    @else if $point == ss {
+        @media (max-width: 480px){@content;}
+    }
+    @else if $point == ls {
+        @media (max-width: 1024px){@content;}
+    }
+}

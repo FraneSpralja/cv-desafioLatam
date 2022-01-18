@@ -1,0 +1,120 @@
+.nav {
+    width: 15%;
+    background-color: $green;
+    padding-top: 6em;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin: 1em;
+    @include breakpoint('ms') {
+        display: block;
+        width: 90%;
+        margin: 1em auto;
+        padding: 0;
+    }
+    @include breakpoint('ss') {
+        margin: 1em auto;
+    }
+}
+
+.nav__fix {
+    position: fixed;
+    left: 3%;
+    @include breakpoint('ls'){
+        transform: scale(80%);
+        left: 2%;
+    }
+    @include breakpoint('ms'){
+        position: initial;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.nav__profile {
+    height: 8em;
+    width: 8em;
+    background-image: url("/assets/images/perfil_cv_DL.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+    transition-property: transform, box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: .2s;
+    &:hover {
+        transform: rotate(360deg);
+        box-shadow: 0 0 6px 10px $white;
+    }
+    @include breakpoint ('ms'){
+        margin: 0 auto 0 0;
+    }
+}
+
+.nav__list-block {
+    margin: 2em auto;
+    @include breakpoint ('ms'){
+        display: block;
+        height: 0;
+        margin: 1em 0;
+        position: absolute;
+        background: $gray-blue;
+        top: 24%;
+        left: 67%;;
+    }
+}
+
+.open {
+    height: 100vh;
+}
+
+.nav__list {
+    list-style-type: none;
+    text-align: center;
+    @include breakpoint('ms') {
+        display: none;
+    }
+}
+
+.list__item {
+    padding: 1em ;
+}
+
+.item__link {
+    color: $gray-blue;
+    font-weight: $font-bold;
+    transition-property: text-shadow, font-weight, color;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    transition-delay: .2s;
+    &:hover {
+        text-shadow: 3px 3px 4px $black;
+        font-weight: $font-black;
+        color: $white;
+    }
+    @include breakpoint('ms'){
+        color: $white;
+    }
+}
+
+
+.toggle__menu {
+    @include breakpoint('ms'){
+        position: absolute;
+        right: 0;
+        top: 25%;
+        font-size: 4em;
+    }
+}
+
+.toggle__menu-btn {
+    @include breakpoint('ms'){
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.show {
+    display: block;
+    padding-top: 3em;
+}
+
