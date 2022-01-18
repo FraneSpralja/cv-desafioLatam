@@ -173,6 +173,7 @@ p {
 }
 @media (max-width: 768px) {
   .toggle__menu {
+    display: block;
     position: absolute;
     right: 0;
     top: 25%;
